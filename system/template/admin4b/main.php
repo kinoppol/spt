@@ -13,7 +13,11 @@ $theme_URL=site_url("system/template/admin4b",true);
     <meta name="description" content="Blank page is a startup point for creating your content.">
     <title><?php print $systemTitle; ?> - <?php print $title; ?></title>
     <link rel="icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <script src='<?php print site_url("system/js/nprogress/nprogress.js",true); ?>'></script>
+    
+    <link rel='stylesheet' href='<?php print site_url("system/js/nprogress/nprogress.css",true); ?>'/>
+    
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="<?php print $theme_URL?>/src/dist/admin4b.min.css" rel="stylesheet">
     
@@ -51,6 +55,11 @@ $theme_URL=site_url("system/template/admin4b",true);
 </head>
 
 <body>
+
+<script>
+    
+    NProgress.start();
+    </script>
     <div class="app">
         <div class="app-sidebar">
             <div class="sidebar-header">
@@ -158,9 +167,14 @@ $theme_URL=site_url("system/template/admin4b",true);
         </div>
     </div>
 </body>
+<script>
+$(function(){
+    NProgress.done();
+});
+</script>
 <?php
 print $systemFoot;
 ?>
 </html>
 <?php
-    print_r($_COOKIES);
+    //print_r($_COOKIES);
