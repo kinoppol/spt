@@ -12,7 +12,7 @@ $theme_URL=site_url("system/template/admin4b",true);
     <meta name="copyright" content="LogiQ System">
     <meta name="description" content="Blank page is a startup point for creating your content.">
     <title><?php print $systemTitle; ?> - <?php print $title; ?></title>
-    <link rel="icon" href="/docs/favicon.ico">
+    <link rel="icon" href="./favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="<?php print $theme_URL?>/src/dist/admin4b.min.css" rel="stylesheet">
@@ -121,6 +121,10 @@ $theme_URL=site_url("system/template/admin4b",true);
                 );
                 print gen_main_menu($menu_id='top-sidebar-nav',  $footMenu, $def=NULL,$class='sidebar-nav');
             ?>
+            </div>
+            <div style="text-align:center">
+            <a href="https://getadmin4b.com" target="_blank" >Template by Admin4B
+            </a>
             </div>
         </div>
         <div class="app-content">
