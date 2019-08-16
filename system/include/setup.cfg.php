@@ -2,6 +2,6 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$database = 'eec_spt';
-$prefix = 'eec_';
+$database = 'lgs';
+$prefix = 'lgs_';
 

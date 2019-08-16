@@ -131,10 +131,6 @@ $theme_URL=site_url("system/template/admin4b",true);
                 print gen_main_menu($menu_id='top-sidebar-nav',  $footMenu, $def=NULL,$class='sidebar-nav');
             ?>
             </div>
-            <div style="text-align:center">
-            <a href="https://getadmin4b.com" target="_blank" >Template by Admin4B
-            </a>
-            </div>
         </div>
         <div class="app-content">
             <div class="content-header">

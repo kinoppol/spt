@@ -106,3 +106,17 @@ function gen_sub_menu($arr,$id){
         ' . $ret . '
         </ul>';
     }
+
+    function sHeader($header,$subheader,$class=''){
+    	$ret='<div class="page-header '.$class.'">
+							<h1>
+                                '.$header.'
+                            </h1>
+								<p>
+									'.$subheader.'
+								</p>
+							
+							<div id="systemAlert"></div>
+						</div>';
+		return $ret;
+    }
